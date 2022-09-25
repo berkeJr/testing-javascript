@@ -1,0 +1,78 @@
+Testing Practices and Principles: 
+
+
+Titles I need to practice: 
+
+- Fundamentals behind tests and testing frameworks
+
+- Distinctions of different form of testing 
+
+- Writing unit and integration 
+
+- Test doubles (mock/stubs/etc.)
+
+- Use Test Driven Development to write new features and to find and fix bugs
+
+- Core principles of testing to ensure your tests give you the confidence you need 
+
+
+------------------------------------------------------------------------------------------
+
+
+What kind of bugs are there? What kind of bugs do you find in software? 
+
+- Security
+
+- Business Logic 
+
+- Integration
+
+- Performance
+
+- User Interface 
+
+- Scaling
+
+- Regression
+
+- Accessibility 
+
+- Internationalization 
+
+and list goes on...
+
+
+------------------------------------------------------------------------------------------
+
+
+How do we prevent bugs?
+
+- 1.Static Typing: Flow / TypeScript (type-checker): Using Flow or TypeScript makes our software better, prevents 
+some bugs. 
+
+- 2.Linting: ESLint: ESLint's job should be to catch common bugs that static type checkers can't catch. We can also 
+write a custom ESLint rule. Additionally, ESLint has a bunch of rules that are useful that static types don't generally
+catch, typecheckers don't catch.
+
+- 3.Testing: ESLint can't catch logic errors. Type checking can't catch logic errors. And there's still big category 
+of bugs that we need to catch with testing. 
+
+
+What kind of testing can we do?
+
+- 1.Unit Testing 
+
+- 2.Integration Testing: Integration test are generally a little bit more complicated. You have to start up 
+the server, and then you have to hit an endpoint or something like that. Maybe you have to have a database up and running. And so 
+often these integration tests can be more complicated. You could also have integration tests on the UI that is mocking out 
+all server requests and stuff, but is integrating how your UI is interacting with itself.
+
+- 3.End to End Testing
+
+- 4.Static Testing
+
+- Also: Penetration testing, Performance testing, Regression testing, a11y testing, Accessibility testing, i18n testing,
+usability testing, user acceptance testing, stress testing, fuzz testing
+
+
+------------------------------------------------------------------------------------------
