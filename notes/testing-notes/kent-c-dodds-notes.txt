@@ -9,7 +9,7 @@ Titles I need to practice:
 
 - Writing unit and integration 
 
-- Test doubles (mock/stubs/etc.)
+- Test doubles (mock/stubs/etc.)a
 
 - Use Test Driven Development to write new features and to find and fix bugs
 

@@ -1,0 +1,10 @@
+1.About The Course
+
+
+- In this course, we are going to learn what exactly 'Automated Tests' are and why we want 
+to add them to our projects. And surely, we are going to practice how we do that, how we write 
+such Unit and Integration Tests and what these things actually are. 
+
+
+- Let's start with the question. What exactly is testing? And what are these Unit and Integration 
+Tests? 
