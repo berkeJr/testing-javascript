@@ -1,0 +1,62 @@
+2.What is Testing?
+
+
+Testing: 
+
+- Manuel Testing
+- Automated Testing
+
+
+- So what is testing? Well, testing is a broad term, and, in the end, it always typically means that we want to 
+verify whether something works as intended. And when writing software or building websites, which, in the end, is 
+writing some software, then we typically want to test whether that software or that website we're building
+is working the way we expect it to work. And we can, of course, verify that.
+
+
+- We can test a piece of software or a website by doing some manual testing, but manual testing will have a couple of 
+downsides and that's why we also can do some automated testing in addition to manual testing. Now manual testing, of course, 
+means that we, for example, visit our demo website locally on our system whilst we're building it. So we spin up some 
+development server, and we test the website whilst we're working on it, and we test the various features whilst we're working 
+on the site. And this is very important, and something you definitely wanna do, and not something you should avoid,
+but, of course, it's also tedious and cumbersome. It's especially cumbersome if you don't just test the feature you are 
+currently working on, but if you always have to test all the features and all the different ways of using a website
+whenever you make a tiny change.
+
+
+- And you might wanna test all these possible scenarios because, of course, maybe you changed one part of a website
+and because of that change some other part stops working.
+
+
+- If you don't test everything, you will miss that something stopped working, and that can be a problem.
+But, of course, if you do start testing the entire site, all its features, and everything that's involved
+in the site, every time you make a tiny change then you have a lot of work to do. And that's where automated testing comes 
+into play.
+ 
+
+- With automated testing, the idea is that you write some code that tests your code. Yeah, so you're writing extra code,
+which is executed during development or whenever you added a new feature, and this code will then run a predefined list of tests
+that test various aspects of your site automatically, always by following the exact same steps and flows,
+therefore, when you add automated testing to your toolbox, you have some initial setup effort,
+and you have to write the testing code initially, but thereafter you have no effort. 
+
+
+- With manual testing, it's error prone. It's easy to forget to test a certain part of the website, and it's not guaranteed 
+that you always test everything in the same reliable way. You might test a certain feature in different ways
+at different point of times. If you have automated tests, if you wrote code that tests your main code,
+then that code will always execute in the same way, and it will always perform the same test.
+It's, therefore, predictable and consistent.
+
+
+- In addition with manual testing, a downside is that it's, of course, often incomplete because you might forget to test
+a certain scenario or aspect. With automated tests, once you defined a test it will always be executed when you run all 
+your tests, therefore, it's much easier to achieve a high amount of code coverage, and it's easier to make sure
+that you test all kinds of different scenarios. Whenever you find out that there is a certain scenario
+or user behavior you want to test, you can just write a new test and add it to your project, and the next time you run all 
+your tests this new test will also be included. So, therefore, automated testing is something you should strongly consider 
+adding to your projects, and, as mentioned, it's not a replacement for manual testing.
+
+
+- Manual testing is important, especially when you are currently working on the project, but you should not only do manual 
+testing. Instead, you should also add automated tests to your projects. And this course is, of course, all about automated 
+testing. You will learn how to add such tests to your project, how to execute them, and, of course, most importantly, how to 
+write them, and which kind of logic should go into your testing code.
