@@ -1,0 +1,78 @@
+3.Unit Testing: What and Why?
+
+
+So automated testing is something you should consider adding to your projects, but there are different kinds of 
+automated testing.
+
+
+And one popular kind of testing about which this course is mostly, is unit testing. But what are unit tests?
+
+
+Well, let's start with units. What are units? In the end, units are the building blocks of your app, and ideally,
+these are the smallest possible building blocks.
+
+
+Now what are application building blocks? Typically functions or classes, or if you're working with a framework or 
+library, like React or Angular, then a component could also be a building block, but it's not just about that.
+It's about functions in general.
+
+
+And typically, indeed, if we speak of a unit, we mean a function. So a unit is basically, or in most cases,
+a function or also quite often a class in your overall project code. And all these units combined make up your 
+application.
+
+
+So in our application, we have multiple functions and classes working together and therefore, our application is in 
+the end,  made up of all these functions and classes and therefore of all these units.
+
+
+So an app is a combination of all these units. And the idea behind unit testing is that we write tests for these individual 
+units that test these units stand alone. And if all units were tested, then the overall app should work.
+
+
+Though we typically back this up with another kind of test, integration tests, about which you'll learn as part of this 
+course as well.
+
+
+And whenever we make a change to our code, we can run all our tests again. And therefore it's easy to detect whether a change 
+in a certain part of our code, a certain part of our project, suddenly broke or changed some other units as well.
+
+
+If we changed something in file A, and that has some indirect influence on another file or another function in another file,
+then with help of unit tests, if we wrote tests for all our units, and if we wrote the right tests, we will find out if we 
+accidentally break something.
+
+
+In addition, even if it's not about such cross effects, even if we're working on a piece of code and we're changing something 
+in an existing function, our existing unit tests might tell us whenever we accidentally break this function or a certain aspect 
+of that function. And that is what unit testing is all about.
+
+
+It's about writing tests that test different expected behaviors of our core building blocks of our applications, 
+typically of our functions and classes.
+
+
+But why would we add such unit testing? Well, if we do, and if we test all these different units, all these different 
+building blocks that make up our application, then we can avoid endless amounts of manual testing.
+
+
+Because again, we have all these predefined unit tests, which we can execute whenever we make some important code change.
+So therefore we can easily test our entire code base by running some automated tests instead of performing a bunch of manual 
+tests, which of course, takes way longer.
+
+
+And it's way easier to cover our entire code base, or almost our entire code base, with unit tests. Because of course, 
+we can add as many unit tests for as many units, so as many functions as we want to.
+
+
+And again, whenever we then change some code, we can run all the unit tests to find out if there are some effects between 
+those different units, and if we broke something.
+
+
+And as you will also learn throughout this course, and as you also learned in my Clean Code course, in case you also took that,
+adding unit tests to your project will also force you to write cleaner and better code because testing is easier if your main 
+code is clean and written in a good way. But I will come back to that throughout this course, of course.
+
+
+So that's unit testing and that's what units are. And this course is primarily about unit testing,
+but unit testing is not the only kind of testing we can perform.
