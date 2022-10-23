@@ -1,10 +1,17 @@
 2.What is Testing?
 
 
-Testing: 
+Manuel Testing
+Automated Testing
 
-- Manuel Testing
-- Automated Testing
+- Static Test: Catch typos and type errors as you write the code. (TypeScript or Flow)
+
+- Unit Test: Verify that individual, isolated parts work as expected.
+
+- Integration Test: Verify that several units work together in harmony.
+
+- End to End Test:A helper robot that behaves like a user to click around the app and verify that it functions correctly. 
+Sometimes called "functional testing" or e2e.
 
 
 - So what is testing? Well, testing is a broad term, and, in the end, it always typically means that we want to 

@@ -1,0 +1,136 @@
+10.Which Tools Are Needed For Testing? 
+
+
+So let's dive into the testing setupyou need.
+It all starts with the general application setup
+for your main application,
+for the main code you're writing,
+for the product you're building,
+even if you don't plan to add any testing.
+Because that's, of course, the main thing you do.
+You're building some product, some application,
+no matter if it's a node, JS, or a react,
+or any other kind of application,
+you are building something in your writing code for that.
+And for that, you have a project.
+Now, that is something you definitely need,
+no matter if you intend to add testing or not.
+And that is also where you can stop already
+if you don't want to add automated tests.
+If you only plan to test your code manually
+by clicking around in the demo website
+with the development server you might have,
+then that is all you need.
+And that is what you see in a lot of projects,
+and what you most likely also did a lot in the past.
+In most of my others courses, we just have a project set up
+without any automated tests
+because I focus on the core topic at hand.
+In the react course,
+I have a react project without automated tests
+because I focus on react features and concepts,
+and we test everything manually in the demo website
+that we get with help of the development server there.
+But of course, in this course,
+we want to dive into automated tests,
+and therefore, we need to enhance this project setup.
+And the good news here is that we can merge
+our testing setup and our testing configuration
+into this main project,
+as you will see later in this section.
+Now, your project setup without the testing parts
+will typically also already come with
+some configuration and some extra tools.
+For example, you might be using Webpack, or Vite,
+or Babel there to optimize and transform your code.
+And the exact set up depends on the project you have.
+And very often,
+you don't create that project configuration on your own,
+but instead, very often, you use some tool,
+like the create react app tool or the angular CLI,
+to create a project for you
+that comes with a certain configuration out of the box
+so that you can focus on the actual code you write.
+So that is what you always have, basically,
+because you need that to build a product,
+to build an application, to write code.
+But then, if you want to add automated tests,
+you need extra tools that are added to this project.
+For example, you need to add a test runner.
+You also will need an assertion library, typically.
+But what are these things?
+What are these tools?
+A test runner, as the name suggests,
+is a tool that actually executes your testing code.
+Because tests are all the just code you write,
+but not code that belongs
+to your main application or product,
+but instead, code that's there to test your other code.
+And that testing code should be executed
+by such a test runner
+because it's not part of your main application code.
+You don't execute it together
+with your main application code.
+Instead, you have a dedicated testing tool,
+a test runner tool that executes your test code only
+during development.
+Such a test runner typically automatically
+detects your testing code
+as long as you place your testing code
+in certain files that follow a certain naming schema,
+but you will learn more about that later.
+The test runner then also is responsible
+for executing your tests,
+gathering the results of these tests,
+and displaying the results of these tests.
+And there are different test runner tools you could add.
+It depends on the programming language you're using,
+but then you also often got multiple alternatives
+for one in the same language.
+For example, for JavaScript tests,
+a popular test runner is Jest.
+Actually, Jest is more than just a test runner,
+but it also is capable of running tests.
+But Karma would be a popular alternative.
+Though, I will say that Jest became more popular
+over the past years.
+So that's one important part.
+But a test runner, as the name suggests,
+only executes your tests.
+You also, of course, need to then define
+what makes a test successful or not.
+So you don't just need to execute your testing code,
+but you also need some way of defining expectations,
+expected results, and what's treated as a success,
+and what should be treated as a failure instead.
+And that's where an assertion library comes into play.
+Because with assertion libraries,
+you can define your expected outcomes.
+And the assertion library will then check if the code
+that's tested, if you're testing code,
+actually produces a result that matches those expectations.
+So whether your expectations are met.
+And good assertion libraries should, of course,
+support all kinds of possible outcomes and situations,
+including synchronous versus asynchronous code, and so on.
+Now, again, the tool you will choose
+depends on the programming language you're using.
+And even inside of one of the same language,
+like JavaScript, you have alternatives,
+like for example, again, Jest for JavaScript, or Chai.
+Now, as you can see on this slide already,
+Jest seems to be a tool that supports both aspects
+which is, of course, great,
+because it means you only need to install one tool
+and configure only one tool
+to get both important features you need
+for defining and running tests.
+So that's the overview of a testing setup
+of how it should look like and which tools are needed.
+In the next lectures, I will now walk you
+through an example project and an example setup
+which also adds a test runner and an assertion library.
+And I will also explain why I'm actually not using
+Jest in this course, but instead, a different tool
+which, in my opinion, is even better,
+and which is gaining a lot of traction lately.

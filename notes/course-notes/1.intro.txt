@@ -1,4 +1,4 @@
-1.About The Course
+1.Welcome To This Course!
 
 
 - In this course, we are going to learn what exactly 'Automated Tests' are and why we want 

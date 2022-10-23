@@ -1,0 +1,142 @@
+11.Jest and Vitest
+
+
+So let's now explore the testing setup
+we'll use in this course
+and talk about various alternatives that we have.
+As mentioned before,
+it all starts with our application setup,
+with the project itself.
+And when it comes to that setup,
+it really does not matter which kind of application it is.
+It could be a simple node express
+or any other node JS framework project,
+but it also could be a front end JavaScript project,
+either with plain JavaScript, maybe combined with a bundler
+or a built tool like VEED or web Pack, which is very popular
+but it could also be of course
+a react or an angular project.
+It really does not matter,
+it's any kind of JavaScript project.
+It could also be a type script project, whatever it is,
+what you'll learn in this course will apply
+to that kind of project, the way you write tests
+and the idea behind writing tests will always be the same.
+Now certain types of projects that might have been created
+with certain tools, for example,
+React projects that were created with Create React app
+or angular projects that were created
+with the Angular CLI, such kinds of projects
+typically already have a full testing workflow built in
+and you can dive right into writing tests.
+And what you will learn in this course will help you
+with these kinds of projects as well
+because the way you write tests and actually
+also the code you write is pretty much always the same.
+It would have to be a very specific kind of configuration
+or setup that those things would change.
+But even then, the general idea,
+the approach towards testing and the logic
+that goes into your tests would still be the same.
+But of course you also might have a project
+which you are creating from scratch on your own,
+especially if it's a Node JS back end project,
+but also for some front end projects,
+you might not always have a predefined testing
+configuration and workflow.
+And as mentioned on this slide before,
+you then need such a test runner
+and such an assertion library, which you add
+to your project setup and which you configure
+such that it works in your project setup up.
+If you use something like Create React app
+or the angular CLI, they already pre-install
+and pre-configure these kinds of tools for you.
+If you're doing it manually, then well,
+you have to do it manually.
+Now you already see on this slide that Jest
+seems to be a very helpful tool because it's mentioned
+for both the Test Runner and Assertion Library category
+and indeed Jest is a very popular tool for testing.
+And you can use it with all kinds of projects
+as you can see on their official website.
+There, if you dive into the documentation,
+you also learn how you can get started.
+And it is indeed super simple.
+Here's a very simple example where I installed Jest
+into a basic Node express application.
+I then just added one file with a test in it.
+And of course is we're going to learn
+what all this code is all about
+and how this works and why I did write this code.
+But with that, I can just run NPM test.
+Since I configured my package.JSON file appropriately
+and my test is executed.
+Again, we're going to learn all the details
+of what's happening here
+and what this command does throughout this course,
+but it's super simple to get started with Jest
+and that's the reason why it is quite popular,
+but Jest also has its disadvantages and downsides.
+It can be a bit slow.
+And especially if you have a project that uses ES modules
+so that uses not common JS as I'm using it here,
+but that uses instead those import export statements,
+which you know from a lot of front end projects especially,
+but which you also can use with Node JS.
+If you're using these ES modules,
+this other kind of import export Syntex,
+then Jest kind of supports it.
+It does support ECMAScript modules
+but support is only experimental.
+And in my experience, setting it up and making it work
+with this other import Syntex can be very annoying
+and you often end up installing extra tools
+and you set up an extra workflow
+for testing where the code gets transpiled and changed
+behind the scenes, which is always a bit annoying
+if your main code works just like that
+without any extra setup and you then need
+some extra configuration just to make your tests work.
+That's not really the idea behind testing.
+You don't wanna test something different
+than you run in production,
+even though it's just a behind the scenes transpolation,
+but still, Jest does have its downsides,
+even though it's very popular.
+Now you absolutely can work around those downsides.
+But in this course, we're going to use Vitest.
+It's a pretty new, pretty popular, all ready, tool
+which also allows you to write tests.
+And it is compatible with Jest syntax.
+It has an API that allows you to write your tests
+in the same way you would write them for Jest basically,
+plus some extra convenience features
+which are really nice to have.
+And it works with ES modules out of the box.
+It also works with common JS.
+So with this import Syntex
+and just to give you an example
+of how easy it is to use Jest,
+here's the exact same project
+as I showed you a couple of seconds ago
+with the same testing code, but now I swapped out Jest
+for Vitest and changed the testing command.
+And with that done, I can still run NPM test
+and I still run all my tests as before.
+So therefore in this course
+we're going to use Vitest because it's a bit faster.
+It has this better ES modules support.
+And as you can see here,
+the code you write in your tests is the same
+as you would do for Jest.
+So the vast majority of what you learn
+in this course can be applied one to one
+in the same way in a Jest project.
+And you got this more modern tool
+behind the scenes to all the advantages of this as well.
+So therefore in this course, we're going to use Vitest
+and just like Jest,
+Vitest is both a test runner and an assertion library.
+So we don't need any other extra setup.
+We can just use Vitest for both.

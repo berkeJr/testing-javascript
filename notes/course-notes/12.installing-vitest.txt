@@ -1,0 +1,36 @@
+12.Installing Vitest 
+
+
+Now I did already show you this example
+and indeed using vitest in your project,
+no matter if it's a frontend project or a node project
+as I have it here, using it is as simple as running
+
+npm install --save-dev and then vitest.
+
+You'll run this command, this installs it
+into your JavaScript project.
+Again, no matter if it's NodeJS or frontend JavaScript.
+And then with that installed,
+all you need to do is in your package.json file,
+you add the test script and you set the value
+either to just vitest or vitest --globals.
+The --globals flag just makes sure that you can use
+special functions like it or expect,
+about which you will learn more throughout this course
+without any extra imports.
+But that is how easy it is to use vitest.
+Now, all that being said, I will provide you with projects
+where I already set up everything so that we can get started
+with testing, because this course is about learning
+to test and to write tests, it's not about learning
+how to configure different kinds of projects,
+hence, I will provide them to you
+so that we can focus on the essentials here.
+Of course, if you wanna learn more about vitest
+or about Jest, check out their official docs,
+check out the details you can learn there
+to dive really deeply into it.
+But with that, that's the kind of setup we're going to use
+in this course and that's the kind of setup
+we're going to use to learn all about tests.

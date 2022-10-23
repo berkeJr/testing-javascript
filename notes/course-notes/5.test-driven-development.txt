@@ -1,0 +1,35 @@
+5.A Quick Note About Test-Driven Development (TDD):
+
+
+
+Now, before we come to an end
+for this section here
+I also briefly wanna talk
+about another testing related concept
+which is Test-Driven Development.
+Now Test Driven Development is in the end a framework
+or a philosophy for writing tests, you could say.
+And the idea behind test a driven development
+is that you don't write your application code first
+and then some tests for that code
+but that instead as a first test
+before you write any application code,
+you write failing tests.
+Where you in the end define the expected behavior,
+then you implement the code that should be tested
+which of course should be implemented
+such that the behavior is met
+and the test therefore succeeds.
+And then you can iteratively refactor
+and go through that flow over and over again,
+and write a new test
+whenever you want to add a new behavior or a new unit
+write a failing test first, then implement the logic,
+maybe optimize the logic thereafter and so on.
+And that is one interesting way of writing your tests.
+This course is not about test driven development though.
+This course is about learning the fundamentals
+of unit testing and how to write tests and stat.
+And once you finished this course,
+you of course would be ready to also explore
+the concept of Test-Driven Development if you want to.

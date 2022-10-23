@@ -1,0 +1,169 @@
+13.Course Project Setup 
+
+
+Now as mentioned,
+for the next course sections,
+I already prepared some projects for you.
+Some projects, which contains some demo dummy code,
+which we can use to write some tests for that code,
+but also some projects,
+where I already installed Vitest for you,
+and set everything up,
+such that we can just get started running those tests,
+and you don't have to go through all the setup
+and installation process on your own.
+Now attached, you find a link that gives you
+free project folders, three demo project folders,
+which all produce the same website in the end,
+but which use different approaches.
+We have some back-end and some front-end code in there,
+and we have different ways of achieving the final result
+of giving you a website, which shows a basic calculator
+that you can use to calculate a number in the end.
+Now, every project is simply just a folder
+with a bunch of code files inside of it,
+and every folder has a package.json file,
+which defines the dependencies that project.
+Now, if you go through these package.json files,
+you will note that in all these package.json files,
+I'm installing vitest,
+but in two of the three package.json files,
+I also use express, as a dependency.
+These two projects here, basic-testing-nodejs
+and basic-testing-nodejs-esmodules, are back-end projects.
+They are node express apps,
+node express projects, in the end.
+The other project as the folder name already reveals
+is a front-end application, so to say,
+and therefore here, I don't install express,
+I just have some development dependencies.
+For example, a basic HTTP server,
+which serves this index HTML file,
+which contains a basic form.
+And this file also imports app.js,
+which is a JavaScript file with some code
+that also imports other files.
+Now, regarding the imports,
+I wanna mention that here, in the front-end app,
+I am using ES modules, ECMAScript modules.
+So this import syntax here,
+and this export syntax like this,
+which you might know from many projects.
+For example, from react projects, angular projects,
+in all those projects, you typically use ECMAScript modules.
+And the browser supports this import export syntax
+out of the box.
+If you import your main script like this,
+with the type equals module attribute.
+If that is brand new to you, you definitely wanna check out
+some basic JavaScript resources first,
+before diving deeper into this course.
+For example, my JavaScript, the complete guide course,
+where I teach about dis import syntax, as well.
+For the node project,
+I have two different variants of one of the same app.
+For the basic-testing-nodejs app,
+I'm using the CommonJS import, which looks like this,
+which you most likely already know
+if you ever worked with node before
+because that is the default import syntax you know there,
+and the export syntax then, looks like this.
+Alternatively, I could have also used
+module exports equaled something,
+but that is how I could export multiple things
+from one file.
+But this is the syntax you should know,
+if you worked with node before.
+As a side note for this course,
+you don't need to know Node.js.
+You don't need to fully understand all that code.
+You will still be able to understand all the testing parts.
+You should, of course,
+have some basic JavaScript knowledge though.
+But this is regular Node.js code.
+I also got a different variant of that same project though,
+where I set the type setting here in package.json to module.
+And therefore, here, I then also use ES modules
+for importing and export.
+This also the works here.
+This is supported by modern Node.js,
+if you have a recent version of Node.js
+installed on your system,
+which you of course should do.
+Now here, I then have the same app,
+but I'm using this different import export syntax,
+which you also know from the front-end.
+Now, all three projects, which we have here,
+in the end give you the same kind of app.
+And we can see this in action if we open the terminal.
+For example, the terminal built into VS Code,
+and we then for example, dive into the front-end project.
+There, you first of all, need to run npm install,
+to install all the dependencies.
+And for this, you also must have Node.js installed.
+And once you ran npm install here,
+you can run npm start in this front-end project.
+This starts a little development server in the end,
+which hosts this index.html file on localhost, 8080.
+And if you open localhost 8080 in your browser,
+you will see something like this.
+By the way, I zoomed in quite a bit here,
+which is why it's that big for me?
+It will be smaller for you, if you're not zooming in.
+There is no styling that would make it that big.
+Now, here we get a basic calculator.
+If I don't enter anything, I get this error.
+If I enter valid numbers, I get the expected result though.
+Also, if I'm using negative numbers.
+And if I manipulate this,
+by using the browser developer tools,
+and are for example change the type of the input here
+from numeric to text,
+so that I can enter something like hello here,
+then I also get an error message.
+Now, that was the front-end application,
+but it's pretty much the same,
+just achieved differently behind the scenes
+for my Node.js applications.
+If you do navigate into the basic-testing-nodejs folder,
+and you run npm install in there,
+to install all the dependencies,
+then you need to execute this app.js file here with node,
+by running node app.js.
+And this will then start a server,
+a Node.js server on port 3000, on local host port 3000.
+And if you open that, you see the same as before.
+And it also has the same functionality, as it did before.
+So that is really the same thing here.
+That is what we can see here in action.
+And the same would be true if you run the other node app,
+if you navigate
+into the basic-testing-nodejs-esmodules project,
+and you run npm install there.
+Once all the dependencies were installed,
+you can run the app.js file, by running node app.js.
+And once that's happening, if you reload,
+you again got that same app here, like this,
+so we can still work with that.
+So it's the same project
+with different ways of achieving the result
+using server-side code for the Node.js project,
+using front-end JavaScript code for the front-end project.
+But it's the same app in the end,
+and it's this demo dummy app, which I'm providing to you,
+which we're going to use to learn about testing.
+Now, I have these different versions the same app
+to show you that what you learn about testing
+will apply to both front-end, and back-end JavaScript code.
+So to browser side JavaScript code
+and the note JS JavaScript code,
+and that it also does not matter
+whether you're using CommonJS
+for importing and exporting here on the back-end,
+or ES modules.
+And with that, that is the setup we're going to use
+for the near future.
+Not the only setup, not the only code,
+not the only project we'll see in this course,
+but it is what we'll use in the next section,
+to get started with the basics of testing.
