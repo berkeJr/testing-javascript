@@ -1,139 +1,82 @@
 6.About This Course 
 
 
-So at this point,
-we have a first basic understanding of what testing is.
-And you're going to learn about all the details
-throughout this course, of course.
-But that leads us to the final lecture
-of this first section.
-What can you expect from this course?
-What's inside this course?
-Well, we're all almost done getting started.
-And in the next course section,
-we will explore which tools we need,
-which software we need to install
-to write and run our tests.
-And we will dive into an example project setup.
-How you could add a testing environment to a project
-and I will provide you with a finished demo project
-or actually multiple demo projects that have tests enabled
-and that have all the required tools installed into them.
-Now once the environment is set up,
-after that next course section,
-we are going to dive into testing itself.
-We'll explore are the fundamentals
-you have to know when it comes to writing
-automated unit tests
-and will explore how such tests are written
-and which logic goes into such tests.
-We'll follow that up by diving into some best practices
-and common patterns you should be aware of.
-So you will learn how you can write good tests
-and what should and shouldn't be tested with your tests
+So at this point, we have a first basic understanding of what testing is. And you're going to learn about all the details
+throughout this course, of course. But that leads us to the final lecture of this first section.
+
+
+What can you expect from this course? What's inside this course? Well, we're all almost done getting started. And in the 
+next course section, we will explore which tools we need, which software we need to install to write and run our tests.
+And we will dive into an example project setup. How you could add a testing environment to a project and I will provide you 
+with a finished demo project or actually multiple demo projects that have tests enabled and that have all the required tools 
+installed into them.
+
+
+Now once the environment is set up, after that next course section, we are going to dive into testing itself. We'll explore 
+the fundamentals you have to know when it comes to writing automated unit tests and will explore how such tests are written
+and which logic goes into such tests. We'll follow that up by diving into some best practices and common patterns you should 
+be aware of. So you will learn how you can write good tests and what should and shouldn't be tested with your tests
 before we then dive into more advanced testing concepts.
-For that, will explore integration tests,
-but also dive into important concepts
-like testing asynchronous code.
-Now that will then give you a very solid lit foundation
-but if you dive a bit deeper into testing
-and into writing automated tests,
-you'll often see that you'll have problems
-when your production code, your main code
-has some side effects in side of it.
-Writing tests for a code that has side effects
-can be challenging as you will learn thereafter,
-and you will learn how you can deal with such side effects
-and how you can write tests
-that deal with a more complex code
-by diving into mocks and spies
-and will not just scratch the surface there,
-but instead also dive really deep into these concepts.
-And of course, as for the rest of the course,
-also practice all these things
-by diving into multiple demos and examples.
-So this entire course is a practical guide
-packed with examples and demos.
-We'll then conclude this course
-by taking a look at front end JavaScript testing
-by looking at a very specific problem you will often face
-when working with front end JavaScript
-and that would be the DOM, the document object model.
-You will learn how you can write tests for a code
-that interacts with the DOM
-and how you can manipulate and prepare the DOM as needed
-in your testing code.
-Now that's the content and all these things, of course,
-will become much clearer as you progress through the course
-and you'll learn about all these concepts.
-But that is the content of the course.
-I also wanna make sure
-that you get the most out of this content.
-And since this is a video course,
-to be precise, a video on demand course,
-the most important aspect
-of getting the most out of this course
-is of course to watch the video videos, but very important,
-watch them at your own pace.
-Since this is a video on demand course,
-you can pause videos whenever you need to,
-you can speed them up, slow them down
-or watch a video multiple times
-if a certain concept isn't clear the first time
-and you should definitely do that.
-Take advantage of this on demand nature of this course
-and make sure you get the most out of these videos.
-But besides watching the videos,
-I also recommend that you code along.
-I will show you many examples
-and I will write many tests as part of these videos.
-And you will get the most out of this course
-if you also sometimes pause the videos
-and you practice writing tests on your own.
-You write the testing code on your own
-and you also experiment with that code.
-Don't just do what I show you in the videos.
-Instead, also feel free to write variations of the tests
-I will write in the videos.
-Write additional tests.
-Really play around with it
-and get a feeling for how that code works
-and what you can do with tests.
-Now, this course also comes with course resources
-and attachments.
-Actually in the next lecture,
-so the last lecture of this first course section,
-you will find a link to a GitHub repository
-where you can get all the tests we write in this course,
-where you can get multiple code snapshots
-for the different sections of this course to be precise
-so that you can compare your solutions to mine,
-and you can also find errors in your code and in your tests
-and compare your code and your tests
-with my code that I show in the various videos.
-So the next lecture leads you to all these project snapshots
-all the testing code, and all other resources I provide
-as part of this course.
-Now last but not least,
-this course also comes with a Q and A section.
-And if you are stuck, if something's not clear,
-you can of course also use that section to seek help.
-But my strong recommendation,
-which you should take really seriously,
-is that you don't just go there and you ask for help,
-but you instead also reply to others.
-Because by replying to others and helping other students
-you will learn way more.
-Because you have to think about a problem,
-come up with a solution and then write down that solution.
-And this is one of the best ways to really learn
-a certain concept in depth
-and to make sure that you really understand
-a certain concept.
-So don't just ask, also answer, help each other
-and make sure that we all grow together
-as we go through this course.
-And therefore with that, that's it for this section.
-We can now finally dive into setting up a project,
-setting everything up for testing,
-and then into writing tests.
+
+
+For that, we'll explore integration tests, but also dive into important concepts like testing asynchronous code. Now that 
+we'll then give you a very solid lit foundation but if you dive a bit deeper into testing and into writing automated tests,
+you'll often see that you'll have problems when your production code, your main code has some side effects inside of it.
+
+
+Writing tests for a code that has side effects can be challenging as you will learn thereafter, and you will learn how you 
+can deal with such side effects and how you can write tests that deal with a more complex code by diving into mocks and spies
+and we'll not just scratch the surface there, but instead also dive really deep into these concepts.
+
+
+And of course, as for the rest of the course, also practice all these things by diving into multiple demos and examples.
+So this entire course is a practical guide packed with examples and demos.
+
+
+We'll then conclude this course by taking a look at front end JavaScript testing by looking at a very specific problem you 
+will often face when working with front end JavaScript and that would be the DOM, the document object model.
+
+
+You will learn how you can write tests for a code that interacts with the DOM and how you can manipulate and prepare the DOM 
+as needed in your testing code.
+
+
+Now that's the content and all these things, of course, will become much clearer as you progress through the course
+and you'll learn about all these concepts. But that is the content of the course.
+
+
+I also wanna make sure that you get the most out of this content. And since this is a video course, to be precise, a video 
+on demand course, the most important aspect of getting the most out of this course is of course to watch the video videos, 
+but very important, watch them at your own pace. Since this is a video on demand course, you can pause videos whenever you 
+need to, you can speed them up, slow them down or watch a video multiple times if a certain concept isn't clear the first 
+time and you should definitely do that. Take advantage of this on demand nature of this course and make sure you get the most 
+out of these videos.
+
+
+But besides watching the videos, I also recommend that you code along. I will show you many examples and I will write many 
+tests as part of these videos. And you will get the most out of this course if you also sometimes pause the videos and you 
+practice writing tests on your own. You write the testing code on your own and you also experiment with that code.
+Don't just do what I show you in the videos. Instead, also feel free to write variations of the tests I will write in the 
+videos. Write additional tests. Really play around with it and get a feeling for how that code works and what you can do
+with tests.
+
+
+Now, this course also comes with course resources and attachments. Actually in the next lecture, so the last lecture of 
+this first course section, you will find a link to a GitHub repository where you can get all the tests we write in this 
+course, where you can get multiple code snapshots for the different sections of this course to be precise so that you can 
+compare your solutions to mine, and you can also find errors in your code and in your tests and compare your code and your 
+tests with my code that I show in the various videos.
+
+
+So the next lecture leads you to all these project snapshots all the testing code, and all other resources I provide
+as part of this course. Now last but not least, this course also comes with a Q and A section. And if you are stuck, 
+if something's not clear, you can of course also use that section to seek help. But my strong recommendation,
+which you should take really seriously, is that you don't just go there and you ask for help, but you instead also reply to 
+others. Because by replying to others and helping other students you will learn way more. Because you have to think about a 
+problem, come up with a solution and then write down that solution. And this is one of the best ways to really learn
+a certain concept in depth and to make sure that you really understand a certain concept.
+
+
+So don't just ask, also answer, help each other and make sure that we all grow together as we go through this course.
+And therefore with that, that's it for this section. We can now finally dive into setting up a project, setting everything up 
+for testing, and then into writing tests.
