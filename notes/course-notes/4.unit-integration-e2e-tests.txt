@@ -1,127 +1,89 @@
 4.Unit Tests & Integration Tests & End to End (E2E) Tests 
 
 
-Besides Unit Testing, we also have integration and end-to-end testing.
+- Unit Tests 
+- Integration Tests 
+- End to End (e2e) Tests 
+
+
+Besides Unit Testing, we also have Integration and End-to-End (E2E) testing.
 
 
 And actually, there are other kinds of testing as well, for example, accessibility testing but these three kinds of tests
-are the most common and popular forms
-of automated tests that you will encounter
-in most pieces of software and most websites.
-And as a side note, the concept of automated testing
-is not exclusive to JavaScript.
-It exists in basically all programming languages,
-so what you learn here will indirectly also help you
-with other languages in case you're interested.
-Now, we did learn about Unit Testing
-in the previous lecture.
-We learned that it's about testing
-the individual building blocks,
-functions and classes that make up our application
-and that all these building blocks are tested standalone.
-And the idea, as mentioned in the previous lecture,
-is that if our building blocks work,
-the entire application should work.
-Now, with integration testing,
-we build up on unit tests
-and we actually also test
-the combination of building blocks,
-the combination of units.
-And we verify that if different units
-are executed together or are working together,
-the overall app still works as intended
-because the idea is that even
-if all our buildings blocks do work correctly individually,
-once we combine them,
-they might not work as expected anymore.
-And I will come back to this idea later in the course
-because in this course,
-we'll also take a look at integration testing
-and see how it's related to unit tests
-and how you can write integration tests.
-Now, end-to-end testing then is a different kind of testing,
-which is not directly related to unit
-or integration testing.
-The idea behind end-to-end testing
-is that you focus on specific user behaviors
-or specific API interfaces your application
-might be providing and you test entire flows,
-entire application features.
-For example, if you're building
-an image upload API endpoint,
-you might want to test the entire image upload workflow,
-which includes extracting the image
-from the incoming request
-and then storing it on the file system.
-With unit tests, you would test the individual parts
-that make up the flow.
-With integration tests, you might test combinations
-of those blocks.
-With end-to-end tests, you would test the entire flow.
-So with end-to-end tests,
-you test the actual things,
-real users or programs interacting
-with your program would do.
-So therefore, these are the most realistic kinds
-of tests you could say
-but they also bring their own challenges
-and ultimately, you should combine all these kinds
-of tests in your projects.
-You should write unit tests,
-you should then also add some integration tests
-and you typically also wanna add some end-to-end tests
-for those important user behaviors
-and complete processes that take place inside of your app.
-You wanna have unit tests because those allow you
-to quickly spot and pinpoint breaking changes.
-With unit tests, it's easy to tell which part
-of the application is affected by a change
-because you test all these parts individually.
-But of course, unit tests do ignore the actual user flows
-and interferences, instead,
-you test these individual building blocks.
-Now, you do have some combinations
-with integration testing
-but you still only test the combinations you wanna test.
-Therefore, you don't model
-the entire user behavior flows there
-but just selected combinations of units.
-Now, once you switch to integration testing,
-it, of course, becomes a bit harder to spot
-which exact part or unit of an application broke
-because of a change
-because you're testing the combination of units.
-Now, with end-to-end tests, as mentioned,
-you do test those realistic behaviors
-of users and those realistic flows,
-those realistic processes that take part of your application
-but, of course, with end-to-end testing,
-it becomes tricky to cover all possible behaviors
-that can be challenging
-and if things do go wrong,
-it, of course, can take some extra work
-to find out which exact part of the application broke
-and which part of the application
-is causing a certain test to fail.
-As mentioned, you typically wanna add all these kinds
-of tests, and we have this concept of a testing pyramid
-where you might wanna add a lot of unit tests,
-basically test for all your units
-that make up your app,
-all your functions and classes
-and not just one test per unit
-but instead, multiple tests per unit
-as you will also learn in this course.
-Then you wanna add some integration tests
-and you wanna have a couple of end-to-end tests
-for the most important behaviors and processes in your app.
-This, however, is no hard rule
-and there definitely are also people advocating
-that you should have more end-to-end tests
-than unit tests.
-Ultimately, knowing all kinds of tests
-is a good idea, and with this course,
-you will learn how to write and add unit
-and integration tests,
-which are super important fundamentals you always must know
-when it comes to writing automated tests for your programs.
+are the most common and popular forms of automated tests that you will encounter in most pieces of software and most websites.
+
+
+And as a side note, the concept of automated testing is not exclusive to JavaScript. It exists in basically all programming 
+languages, so what you learn here will indirectly also help you with other languages in case you're interested.
+
+
+Now, we did learn about Unit Testing in the previous lecture. We learned that it's about testing the individual building 
+blocks, functions and classes that make up our application and that all these building blocks are tested standalone. And the 
+idea, as mentioned in the previous lecture, is that if our building blocks work, the entire application should work. 
+
+
+Now, with integration testing, we build up on unit tests and we actually also test the combination of building blocks,
+the combination of units. And we verify that if different units are executed together or are working together, the overall app 
+still works as intended because the idea is that even if all our buildings blocks do work correctly individually, once we combine 
+them, they might not work as expected anymore.
+
+
+And I will come back to this idea later in the course because in this course, we'll also take a look at integration testing
+and see how it's related to unit tests and how you can write integration tests. Now, end-to-end testing then is a different kind 
+of testing, which is not directly related to unit or integration testing.
+
+
+The idea behind end-to-end testing is that you focus on specific user behaviors or specific API interfaces your application
+might be providing and you test entire flows, entire application features. 
+
+
+For example, if you're building an image upload API endpoint, you might want to test the entire image upload workflow,
+which includes extracting the image from the incoming request and then storing it on the file system. 
+
+
+With unit tests, you would test the individual parts that make up the flow.
+
+
+With integration tests, you might test combinations of those blocks.
+
+
+With end-to-end tests, you would test the entire flow. So with end-to-end tests, you test the actual things, real users or 
+programs interacting with your program would do. So therefore, these are the most realistic kinds of tests you could say
+but they also bring their own challenges and ultimately, you should combine all these kinds of tests in your projects.
+
+
+You should write unit tests, you should then also add some integration tests and you typically also wanna add some end-to-end 
+tests for those important user behaviors and complete processes that take place inside of your app. You wanna have unit tests 
+because those allow you to quickly spot and pinpoint breaking changes.
+
+
+With unit tests, it's easy to tell which part of the application is affected by a change because you test all these parts 
+individually. But of course, unit tests do ignore the actual user flows and interferences, instead, you test these individual 
+building blocks.
+
+
+Now, you do have some combinations with integration testing but you still only test the combinations you wanna test.
+Therefore, you don't model the entire user behavior flows there but just selected combinations of units. Now, once you switch 
+to integration testing, it, of course, becomes a bit harder to spot which exact part or unit of an application broke
+because of a change because you're testing the combination of units.
+
+
+Now, with end-to-end tests, as mentioned, you do test those realistic behaviors of users and those realistic flows,
+those realistic processes that take part of your application but, of course, with end-to-end testing, it becomes tricky to cover 
+all possible behaviors that can be challenging and if things do go wrong, it, of course, can take some extra work to find out 
+which exact part of the application broke and which part of the application is causing a certain test to fail.
+
+
+As mentioned, you typically wanna add all these kinds of tests, and we have this concept of a testing pyramid where you might 
+wanna add a lot of unit tests, basically test for all your units that make up your app, all your functions and classes and not 
+just one test per unit but instead, multiple tests per unit as you will also learn in this course.
+
+
+Then you wanna add some integration tests and you wanna have a couple of end-to-end tests for the most important behaviors and 
+processes in your app. This, however, is no hard rule and there definitely are also people advocating that you should have 
+more end-to-end tests than unit tests.
+
+
+Ultimately, knowing all kinds of tests is a good idea, and with this course, you will learn how to write and add unit
+and integration tests, which are super important fundamentals you always must know when it comes to writing automated tests for 
+your programs.
