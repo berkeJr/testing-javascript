@@ -1,27 +1,18 @@
 9.Module Introduction 
 
 
-Maximilian Schwarzmüller] So now that we got started
-and you know what the course is about,
-the first thing we'll have to do
-in order to learn about tests and write tests
-is we have to set up a Testing environment.
-We have to create a project,
-where we have all the tools we need to run tests.
-And therefore in this section,
-I will show you
-how such an example environment could look like.
-And I will walk you through the required tools
-and elements we need in such an environment.
-Of course, I will also show you an example setup.
-We'll use a couple of setups,
-but we'll have a base setup
-which we'll use for the course and I'll show you that setup,
-and you will get all these setups from me.
-And I will also talk about various alternatives
-we have at certain points.
-Different tools we could use for the same job,
-and why I'm choosing a certain tool for this course
-but that what you'll learn in this course,
-will apply in general,
-no matter which setup you will later use in your projects.
+So now that we got started and you know what the course is about, the first thing we'll have to do in order to learn about 
+tests and write tests is we have to set up a Testing environment. We have to create a project, where we have all the tools 
+we need to run tests.
+
+
+And therefore in this section, I will show you how such an example environment could look like. And I will walk you through 
+the required tools and elements we need in such an environment. Of course, I will also show you an example setup.
+
+
+We'll use a couple of setups, but we'll have a base setup which we'll use for the course and I'll show you that setup,
+and you will get all these setups from me. And I will also talk about various alternatives we have at certain points.
+
+
+Different tools we could use for the same job, and why I'm choosing a certain tool for this course but that what you'll learn 
+in this course, will apply in general, no matter which setup you will later use in your projects.
